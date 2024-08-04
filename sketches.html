@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRAVIN SHARMA | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="background-container"></div>
+
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <div class="pic">
+                <a href="index.html#home"><img src="images/Screenshot 2024-07-27 203654.jpg" alt="Your Logo" height="40px"></a>
+            </div>
+            <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+        <ul class="nav-links menu" id="menu">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <section class="gallery">
+        <div class="container">
+            <div class="row">
+                <div class="gallery-filter">
+                    <span class="filter-item active" data-filter="all">All</span>
+                    <span class="filter-item" data-filter="graphite">Graphite</span>
+                    <span class="filter-item" data-filter="charcoal">Charcoal</span>
+                    <span class="filter-item" data-filter="paints">Paints</span>
+                    <span class="filter-item" data-filter="scribbles">Scribbles</span>
+                </div>
+            </div>
+            <div class="row">
+                <!-- gallery item start -->
+            <div class="gallery-item charcoal">
+                <div class="gallery-item-inner">
+                    <img src="sketches/IMG_20211211_000916_435.jpg" alt="shinigami-ryuk"  class="thumbnail">
+                </div>
+            </div>
+            <!-- gellery item end -->
+            <!-- gallery item start -->
+            <div class="gallery-item graphite">
+                <div class="gallery-item-inner">
+                    <img src="sketches/IMG_20211202_204921_433.jpg" alt="shawn"  class="thumbnail">
+                </div>
+            </div>
+            <!-- gellery item end -->
+            <!-- gallery item start -->
+            <div class="gallery-item paints">
+                <div class="gallery-item-inner">
+                    <img src="sketches/IMG_20240414_205806_056.webp" alt="wall-E"  class="thumbnail">
+                </div>
+            </div>
+            <!-- gellery item end -->
+            <!-- gallery item start -->
+            <div class="gallery-item graphite">
+                <div class="gallery-item-inner">
+                    <img src="sketches/Picsart_22-10-09_15-39-43-462.jpg" alt="mizuhara" class="thumbnail">
+                </div>
+            </div>
+            <!-- gellery item end -->
+            <!-- gallery item start -->
+            <div class="gallery-item charcoal">
+                <div class="gallery-item-inner">
+                    <img src="sketches/Screenshot_2023-01-29-11-47-58-48_1c337646f29875672b5a61192b9010f9.jpg" alt="i am groot" class="thumbnail">
+                </div>
+            </div>
+            <!-- gellery item end -->
+            <!-- gallery item start -->
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <img src="sketches/Screenshot_2023-01-29-11-48-47-96_1c337646f29875672b5a61192b9010f9.jpg" alt="captain america" class="thumbnail">
+                </div>
+            </div>
+            <!-- gellery item end -->
+            <!-- gallery item start -->
+            <div class="gallery-item graphite">
+                <div class="gallery-item-inner">
+                    <img src="sketches/Screenshot_2023-01-30-21-10-30-70_1c337646f29875672b5a61192b9010f9.jpg" alt="blackPink" class="thumbnail">
+                </div>
+            </div>
+            <!-- gellery item end -->
+            <!-- gallery item start -->
+            <div class="gallery-item graphite">
+                <div class="gallery-item-inner">
+                    <img src="sketches/Screenshot_2023-01-30-21-10-46-24_1c337646f29875672b5a61192b9010f9.jpg" alt="blackPink" class="thumbnail">
+                </div>
+            </div>
+            <!-- gellery item end -->
+            <!-- gallery item start -->
+            <div class="gallery-item graphite charcoal">
+                <div class="gallery-item-inner">
+                    <img src="sketches/Screenshot_2023-01-30-21-11-01-07_1c337646f29875672b5a61192b9010f9.jpg" alt="blackPink" class="thumbnail">
+                </div>
+            </div>
+            <!-- gellery item end -->
+            <!-- gallery item start -->
+            <div class="gallery-item charcoal">
+                <div class="gallery-item-inner">
+                    <img src="sketches/IMG_20210616_025751.jpg" alt="luffy" class="thumbnail">
+                </div>
+            </div>
+            <!-- gellery item end -->
+             <!-- gallery item start -->
+             <div class="gallery-item charcoal">
+                <div class="gallery-item-inner">
+                    <img src="sketches/IMG_20230129_114719.jpg" alt="itachi" class="thumbnail">
+                </div>
+            </div>
+            <!-- gellery item end -->
+            <!-- gallery item start -->
+            <div class="gallery-item graphite charcoal">
+                <div class="gallery-item-inner">
+                    <img src="sketches/IMG_20211006_142048-01.jpg" alt="blackPink" class="thumbnail">
+                </div>
+            </div>
+            <!-- gellery item end -->
+            <!-- gallery item start -->
+            <div class="gallery-item charcoal">
+                <div class="gallery-item-inner">
+                    <img src="sketches/IMG_20210914_174254-01.jpg" alt="sanji zoro" class="thumbnail">
+                </div>
+            </div>
+            <!-- gellery item end -->
+
+            
+            </div>
+
+            <div id="image-modal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="modal-image">
+            </div>
+            
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024. All rights reserved.</p>
+    </footer>
+
+    <script>
+        window.addEventListener('load', function() {
+            var loader = document.getElementById("loader");
+            loader.style.display = "none";
+        });
+    </script>
+
+    <script type="text/javascript">
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+        });
+    </script>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
